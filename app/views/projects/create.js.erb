@@ -1,0 +1,6 @@
+//$('#projects').append("<%= j render(@project) %>");
+var users = document.querySelector("#projects");
+users.insertAdjacentHTML("beforeend", "<%= j render(@project) %>");
+var inp = document.querySelector("#project_title");
+inp.value = ('');
+$('#exampleModal').modal('hide');
